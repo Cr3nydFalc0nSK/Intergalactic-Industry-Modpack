@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<worldGeneration version="3"
+				 xmlns="http://warpdrive.lemadec.org"
+				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:schemaLocation="http://warpdrive.lemadec.org WarpDrive.xsd">
+	
+	<celestialObject id="Hyperspace">
+		<size x="2000000" z="2000000" />
+		<name>Hyperspace</name>
+		<description>Your ship warp bubble is your\nonly protection.</description>
+		
+		<dimension id="-100" isBreathable="false" isHyperspace="true" gravity="legacyHyperspace">
+			<center x="0" z="0" />
+			<provider type="WarpDriveHyperspace" />
+		</dimension>
+		
+		<skybox>
+			<backgroundColor red="0.0" green="0.0" blue="1.0" />
+			<starBrightnessBase>0.2</starBrightnessBase>
+			<starBrightnessVanilla>0.0</starBrightnessVanilla>
+			<celestialObjectOpacity>0.3</celestialObjectOpacity>
+			<fogColor red="0.15" green="0.0" blue="0.0" />
+			<fogFactor red="0.0" green="0.0" blue="0.0" />
+		</skybox>
+		
+		<celestialObject id="kepler22">
+			<parent>
+				<center x="-105000" z="-145000" />
+			</parent>
+			<size x="95000" z="95000" />
+			<name>Kepler-22 system</name>
+			<description>Single star, Spectral type: G2V, Distance: 196pc</description>
+			<dimension id="1005" isBreathable="false" gravity="legacySpace">
+				<center x="0" z="0" />
+				<provider type="WarpDriveSpace" />
+				<generate group="moon" ratio="0.00125" />
+				<generate group="asteroid" ratio="0.0067" />
+				<generate group="asteroids_field" ratio="0.0016" />
+			</dimension>
+			
+			<skybox>
+				<backgroundColor red="0.0" green="0.0" blue="0.0" />
+				<boxTextures
+						 back  ="warpdrive:textures/skybox/kepler22/back.png"
+						 bottom="warpdrive:textures/skybox/kepler22/bottom.png"
+						 front ="warpdrive:textures/skybox/kepler22/front.png"
+						 left  ="warpdrive:textures/skybox/kepler22/left.png"
+						 right ="warpdrive:textures/skybox/kepler22/right.png"
+						 top   ="warpdrive:textures/skybox/kepler22/top.png" />
+				<starBrightnessBase>0.0</starBrightnessBase>
+				<starBrightnessVanilla>0.0</starBrightnessVanilla>
+				<celestialObjectOpacity>1.0</celestialObjectOpacity>
+				<fogColor red="0.0" green="0.0" blue="0.2" />
+				<fogFactor red="0.0" green="0.0" blue="0.3" />
+			</skybox>
+
+			<celestialObject id="kepler22star">
+				<parent>
+					<center x="0" z="0" />
+				</parent>
+				<size x="25000" z="25000" />
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/sun.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Ares-0751">
+				<parent>
+					<center x="-20000" z="0" />
+				</parent>
+				<size x="5000" z="5000" />
+				<dimension id="131" isBreathable="true" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/redsand.png" periodU="150" />
+				<render red="0.90" green="0.95" blue="1.00" alpha="0.15" texture="warpdrive:textures/celestial/atmosphereleo.png" periodU="100" periodV="1100" additive="true" />
+			</celestialObject>
+
+			<celestialObject id="Kepler-22b">
+				<parent>
+					<center x="25000" z="-25000" />
+				</parent>
+				<size x="15000" z="15000" />
+				<dimension id="132" isBreathable="true" gravity="normal">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/waterworld.png" periodU="150" />
+				<render red="0.90" green="0.95" blue="1.00" alpha="0.15" texture="warpdrive:textures/celestial/atmosphereleo.png" periodU="100" periodV="1100" additive="true" />
+			</celestialObject>
+
+			<celestialObject id="Kepler-22ba">
+				<parent>
+					<center x="40000" z="-25000" />
+				</parent>
+				<size x="1000" z="1000" />
+				<dimension id="133" isBreathable="false" gravity="0.45">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/asteroid_a.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Kepler-22bb">
+				<parent>
+					<center x="40000" z="-40000" />
+				</parent>
+				<size x="1000" z="1000" />
+				<dimension id="134" isBreathable="false" gravity="0.45">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/asteroid_b.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Poolvin-380">
+				<parent>
+					<center x="25000" z="-40000" />
+				</parent>
+				<size x="5000" z="5000" />
+				<dimension id="135" isBreathable="false" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/moon.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Apollo-501">
+				<parent>
+					<center x="10000" z="35000" />
+				</parent>
+				<size x="15000" z="15000" />
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/greengasgiant.png" periodU="150" />
+				<render red="0.90" green="0.95" blue="1.00" alpha="0.15" texture="warpdrive:textures/celestial/atmosphereleo.png" periodU="100" periodV="1100" additive="true" />
+			</celestialObject>
+
+			<celestialObject id="Apollo-501a">
+				<parent>
+					<center x="5000" z="20000" />
+				</parent>
+				<size x="2500" z="2500" />
+				<dimension id="137" isBreathable="false" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/moon.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Apollo-501b">
+				<parent>
+					<center x="15000" z="20000" />
+				</parent>
+				<size x="2500" z="2500" />
+				<dimension id="138" isBreathable="false" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/moon.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Apollo-501c">
+				<parent>
+					<center x="25000" z="30000" />
+				</parent>
+				<size x="2500" z="2500" />
+				<dimension id="139" isBreathable="false" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/moon.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Vultep-134">
+				<parent>
+					<center x="25000" z="40000" />
+				</parent>
+				<size x="5000" z="5000" />
+				<dimension id="140" isBreathable="true" gravity="normal">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/lava.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Cronus-12">
+				<parent>
+					<center x="-10000" z="-35000" />
+				</parent>
+				<size x="15000" z="15000" />
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/greygasgiant.png" periodU="150" />
+				<render red="0.90" green="0.95" blue="1.00" alpha="0.15" texture="warpdrive:textures/celestial/atmosphereleo.png" periodU="100" periodV="1100" additive="true" />
+			</celestialObject>
+
+			<celestialObject id="Cronus-12a">
+				<parent>
+					<center x="-25000" z="-20000" />
+				</parent>
+				<size x="2500" z="2500" />
+				<dimension id="142" isBreathable="false" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/iceworld.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Cronus-12b">
+				<parent>
+					<center x="-15000" z="-20000" />
+				</parent>
+				<size x="2500" z="2500" />
+				<dimension id="143" isBreathable="false" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/iceworld.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Cronus-12c">
+				<parent>
+					<center x="-25000" z="-30000" />
+				</parent>
+				<size x="2500" z="2500" />
+				<dimension id="144" isBreathable="false" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/iceworld.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Cronus-12d">
+				<parent>
+					<center x="-25000" z="-40000" />
+				</parent>
+				<size x="2500" z="2500" />
+				<dimension id="145" isBreathable="false" gravity="0.6">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/iceworld.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Boius-317">
+				<parent>
+					<center x="-40000" z="0" />
+				</parent>
+				<size x="10000" z="10000" />
+				<dimension id="146" isBreathable="false" gravity="normal">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/iceworld.png" periodU="150" />
+			</celestialObject>
+
+			<celestialObject id="Deepton-240">
+				<parent>
+					<center x="-40000" z="-10000" />
+				</parent>
+				<size x="-40000" z="-10000" />
+				<dimension id="147" isBreathable="false" gravity="0.8">
+					<center x="0" z="0" />
+				</dimension>
+				<render red="1.00" green="1.00" blue="1.00" alpha="1.00" texture="warpdrive:textures/celestial/moon.png" periodU="150" />
+			</celestialObject>
+
+		</celestialObject>
+		
+	</celestialObject>
+
+</worldGeneration>
