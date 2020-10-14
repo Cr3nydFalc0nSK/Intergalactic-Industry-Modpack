@@ -1,0 +1,30 @@
+{
+	"populate": {
+        "underground_water_lake": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "plate",
+				"block": "minecraft:water",
+				"material": "minecraft:stone",
+				"radius": 8,
+				"height": 2,
+				"slim": false
+			},
+			"cluster-count": 3,
+			"chunk-chance": 1,
+			"min-height": 55,
+			"max-height": 60,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					165
+				]
+			}
+		}
+	}
+}
+
+
+ 
