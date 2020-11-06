@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<worldGeneration version="3"
+				 xmlns="http://warpdrive.lemadec.org"
+				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:schemaLocation="http://warpdrive.lemadec.org WarpDrive.xsd">
+
+	<structure group="moon" name="iron_triad" weight="20">
+		<shell name="core" minThickness="6" maxThickness="7">
+			<import group="moon.core.iron_triad" />
+		</shell>
+		<shell name="mantle" minThickness="23" maxThickness="27">
+			<import group="rich_ores" />
+		</shell>
+		<shell name="crust" minThickness="9" maxThickness="10">
+			<import group="ice" />
+		</shell>
+		<shell name="surface" minThickness="4" maxThickness="5">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="moon" name="platinum_triad" weight="20">
+		<shell name="core" minThickness="5" maxThickness="6">
+			<import group="moon.core.platinum_triad" />
+		</shell>
+		<shell name="mantle" minThickness="23" maxThickness="27">
+			<import group="rich_ores" />
+		</shell>
+		<shell name="crust" minThickness="10" maxThickness="11">
+			<import group="ice" />
+		</shell>
+		<shell name="surface" minThickness="4" maxThickness="5">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="moon" name="quartz" weight="17">
+		<shell name="core" minThickness="4" maxThickness="5">
+			<import group="moon.core.quartz" />
+		</shell>
+		<shell name="mantle" minThickness="14" maxThickness="15">
+			<import group="quartz" />
+		</shell>
+		<shell name="flow" minThickness="7" maxThickness="8">
+			<import group="quartz" />
+		</shell>
+		<shell name="crust" minThickness="11" maxThickness="12">
+			<import group="ice" />
+		</shell>
+		<shell name="mantle" minThickness="10" maxThickness="12">
+			<filler weight="1" block="warpdrive:gas" metadata="7" />
+		</shell>
+	</structure>
+
+	<structure group="moon" name="naquadah" weight="10">
+		<shell name="core" minThickness="4" maxThickness="5">
+			<filler weight="1" block="gregtech:compressed_14" metadata="6" />
+		</shell>
+		<shell name="mantle" minThickness="14" maxThickness="15">
+			<filler weight="40" block="gregtech:rich_ore_naquadriatic_compound_0" metadata="9" />
+			<filler weight="30" block="minecraft:magma" />
+			<filler weight="30" block="minecraft:lava" />
+		</shell>
+		<shell name="flow" minThickness="7" maxThickness="8">
+			<filler weight="70" block="minecraft:magma" />
+			<filler weight="30" block="minecraft:lava" />
+		</shell>
+		<shell name="crust" minThickness="11" maxThickness="12">
+			<import group="magma" />
+		</shell>
+		<shell name="mantle" minThickness="10" maxThickness="12">
+			<filler weight="1" block="warpdrive:gas" metadata="1" />
+		</shell>
+	</structure>
+
+	<for variable="metadataGas" in="0,1,2,3,4,5,6,7,8,9,10,11">
+		<structure group="gascloud" name="smallCloud_%metadataGas%" weight="1">
+			<metaShell block="minecraft:glowstoneOff" minCount="3" maxCount="7" minRadius="3" relativeRadius="0.5" />
+			<shell name="mantle" minThickness="2" maxThickness="5">
+				<filler weight="1" block="warpdrive:gas" metadata="%metadataGas%" />
+			</shell>
+		</structure>
+	</for>
+	
+	<structure group="asteroid" name="platinum_triad" weight="19">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="platinum_triad" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="tungsten" weight="14">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="tungsten" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="naquadah" weight="14">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="10">
+			<import group="naquadah" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="4">
+			<import group="magma" />
+		</shell>
+		<shell name="mantle" minThickness="1" maxThickness="2">
+			<filler weight="1" block="warpdrive:gas" metadata="1" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="copper" weight="19">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="copper" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="neodynium" weight="11">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="neodynium" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="galena" weight="16">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="galena" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="gold" weight="17">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="gold" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="iron_triad" weight="25">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="iron_triad" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="zinc" weight="17">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="zinc" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="titanium" weight="16">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="titanium" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="stone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="casserite" weight="15">
+		<metaShell block="minecraft:hardened_clay" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="casserite" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="sandstone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="magnesite" weight="16">
+		<metaShell block="minecraft:hardened_clay" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="magnesite" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="sandstone" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="diamond" weight="15">
+		<metaShell block="galacticraftplanets:dense_ice" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="9">
+			<import group="diamond" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="4">
+			<import group="ice" />
+		</shell>
+		<shell name="mantle" minThickness="1" maxThickness="1">
+			<filler weight="1" block="warpdrive:gas" metadata="7" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="lapis" weight="20">
+		<metaShell block="galacticraftplanets:dense_ice" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="9">
+			<import group="lapis" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="4">
+			<import group="ice" />
+		</shell>
+		<shell name="mantle" minThickness="1" maxThickness="1">
+			<filler weight="1" block="warpdrive:gas" metadata="7" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="quartz" weight="20">
+		<metaShell block="galacticraftplanets:dense_ice" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="9">
+			<import group="quartz" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="4">
+			<import group="ice" />
+		</shell>
+		<shell name="mantle" minThickness="1" maxThickness="1">
+			<filler weight="1" block="warpdrive:gas" metadata="7" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="dilithium" weight="9">
+		<metaShell block="galacticraftplanets:dense_ice" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="dilithium" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="ice" />
+		</shell>
+		<shell name="mantle" minThickness="1" maxThickness="1">
+			<filler weight="1" block="warpdrive:gas" metadata="7" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="lithium" weight="10">
+		<metaShell block="minecraft:clay" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="lithium" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="clay" />
+		</shell>
+	</structure>
+
+	<structure group="asteroid" name="redstone" weight="13">
+		<metaShell block="minecraft:clay" minCount="6" maxCount="10" minRadius="4" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="5" maxThickness="8">
+			<import group="redstone" />
+		</shell>
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="clay" />
+		</shell>
+	</structure>
+
+	<structure group="small_asteroid" name="ores" weight="15">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="20" maxCount="30" minRadius="5" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="2" maxThickness="3">
+			<import group="ores" />
+		</shell>
+	</structure>
+
+	<structure group="small_asteroid" name="ice" weight="5">
+		<metaShell block="galacticraftplanets:dense_ice" minCount="20" maxCount="30" minRadius="5" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="1" maxThickness="1">
+			<import group="ice" />
+		</shell>
+	</structure>
+
+	<structure group="small_asteroid" name="stone" weight="10">
+		<metaShell block="appliedenergistics2:sky_stone_block" minCount="20" maxCount="100" minRadius="5" relativeRadius="0.8" />
+		<shell name="mantle" minThickness="1" maxThickness="1">
+			<import group="stone" />
+		</shell>
+	</structure>
+</worldGeneration>
