@@ -1,0 +1,311 @@
+<galaxy>
+	<star name="Sol" temp="100" x="0" y="0" size="1.0" numPlanets="0" numGasGiants="0">
+		<planet name="Earth" DIMID="0" dimMapping="" customIcon="earthlike">
+			<isKnown>true</isKnown>
+			<fogColor>0x62B8F5</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>100</orbitalDistance>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>100</atmosphereDensity>
+			<planet name="Moon" DIMID="-28" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>16</gravitationalMultiplier>
+				<orbitalDistance>150</orbitalDistance>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>128000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+		</planet>
+		<planet name="Mercury" DIMID="-13" dimMapping="" customIcon="bedrock">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.0,0.0,0.0</skyColor>
+			<gravitationalMultiplier>35</gravitationalMultiplier>
+			<orbitalDistance>50</orbitalDistance>
+			<orbitalPhi>-1</orbitalPhi>
+			<rotationalPeriod>1400000</rotationalPeriod>
+			<atmosphereDensity>0</atmosphereDensity>
+			<generateCraters>true</generateCraters>
+		</planet>
+		<planet name="Venus" DIMID="-31" dimMapping="" customIcon="venusian">
+			<isKnown>true</isKnown>
+			<fogColor>0.9,0.9,0.9</fogColor>
+			<skyColor>0.9,0.9,0.9</skyColor>
+			<gravitationalMultiplier>80</gravitationalMultiplier>
+			<orbitalDistance>70</orbitalDistance>
+			<orbitalPhi>-2</orbitalPhi>
+			<rotationalPeriod>2784000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<generateCraters>true</generateCraters>
+		</planet>
+		<planet name="Mars" DIMID="-29" dimMapping="" customIcon="marslike">
+			<isKnown>true</isKnown>
+			<fogColor>0.9,0.6,0.1</fogColor>
+			<skyColor>1.0,0.2,0.0</skyColor>
+			<gravitationalMultiplier>60</gravitationalMultiplier>
+			<orbitalDistance>130</orbitalDistance>
+			<orbitalPhi>-3</orbitalPhi>
+			<rotationalPeriod>20000</rotationalPeriod>
+			<atmosphereDensity>70</atmosphereDensity>
+			<generateCraters>true</generateCraters>
+			<planet name="Phobos" DIMID="-33" dimMapping="" customIcon="asteroid_a">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>10</gravitationalMultiplier>
+				<orbitalDistance>30</orbitalDistance>
+				<orbitalTheta>270</orbitalTheta>
+				<orbitalPhi>90</orbitalPhi>
+				<rotationalPeriod>12000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+			<planet name="Deimos" DIMID="-35" dimMapping="" customIcon="asteroid_b">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>10</gravitationalMultiplier>
+				<orbitalDistance>100</orbitalDistance>
+				<orbitalTheta>90</orbitalTheta>
+				<orbitalPhi>270</orbitalPhi>
+				<rotationalPeriod>18000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+		</planet>
+		<planet name="Ceres" DIMID="-20" dimMapping="" customIcon="asteroid_a">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.0,0.0,0.0</skyColor>
+			<gravitationalMultiplier>20</gravitationalMultiplier>
+			<orbitalDistance>105</orbitalDistance>
+			<orbitalPhi>-3</orbitalPhi>
+			<orbitalTheta>30</orbitalTheta>
+			<rotationalPeriod>25000</rotationalPeriod>
+			<atmosphereDensity>0</atmosphereDensity>
+			<generateCraters>true</generateCraters>
+		</planet>
+		<planet name="Asteroid Belt" DIMID="-30" dimMapping="" customIcon="asteroid_a">
+			<isKnown>true</isKnown>
+			<gravitationalMultiplier>20</gravitationalMultiplier>
+			<orbitalDistance>105</orbitalDistance>
+			<orbitalPhi>-3</orbitalPhi>
+			<rotationalPeriod>25000</rotationalPeriod>
+			<atmosphereDensity>0</atmosphereDensity>
+		</planet>
+		<planet name="Jupiter" DIMID="105" customIcon="jupiter">
+			<isKnown>true</isKnown>
+			<GasGiant>true</GasGiant>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>150</gravitationalMultiplier>
+			<orbitalDistance>160</orbitalDistance>
+			<orbitalPhi>-4</orbitalPhi>
+			<rotationalPeriod>9900</rotationalPeriod>
+			<atmosphereDensity>100</atmosphereDensity>
+			<planet name="Ganymede" DIMID="-1511" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>45</orbitalDistance>
+				<orbitalTheta>45</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>24000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+			<planet name="Io" DIMID="-1500" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>70</orbitalDistance>
+				<orbitalPhi>-1</orbitalPhi>
+				<rotationalPeriod>14000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+			<planet name="Europa" DIMID="-1501" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>90</orbitalDistance>
+				<orbitalPhi>88</orbitalPhi>
+				<rotationalPeriod>10000</rotationalPeriod>
+				<atmosphereDensity>100</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+			<planet name="Callisto" DIMID="-1505" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>140</orbitalDistance>
+				<orbitalPhi>88</orbitalPhi>
+				<rotationalPeriod>10000</rotationalPeriod>
+				<atmosphereDensity>100</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+		</planet>
+		<planet name="Saturn" DIMID="110" customIcon="gasgiantbrown">
+			<isKnown>true</isKnown>
+			<hasRings>true</hasRings>
+			<ringColor>0.4,0.4,0.7</ringColor>
+			<GasGiant>true</GasGiant>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>150</gravitationalMultiplier>
+			<orbitalDistance>200</orbitalDistance>
+			<orbitalPhi>-2</orbitalPhi>
+			<rotationalPeriod>10600</rotationalPeriod>
+			<atmosphereDensity>100</atmosphereDensity>
+			<planet name="Titan" DIMID="-1508" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>0.9,0.9,0.9</fogColor>
+				<skyColor>0.9,0.9,0.9</skyColor>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>70</orbitalDistance>
+				<orbitalPhi>120</orbitalPhi>
+				<rotationalPeriod>60000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+			<planet name="Enceladus" DIMID="112" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>100</orbitalDistance>
+				<orbitalPhi>120</orbitalPhi>
+				<rotationalPeriod>66000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+			<planet name="Iapetus" DIMID="-1511" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>130</orbitalDistance>
+				<orbitalPhi>120</orbitalPhi>
+				<rotationalPeriod>72000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+			<planet name="Rhea" DIMID="-1507" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>185</orbitalDistance>
+				<orbitalPhi>180</orbitalPhi>
+				<rotationalPeriod>78000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+		</planet>
+		<planet name="Uranus" DIMID="115" customIcon="uranus">
+			<isKnown>true</isKnown>
+			<hasRings>true</hasRings>
+			<ringColor>0.4,0.4,0.7</ringColor>
+			<GasGiant>true</GasGiant>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.435,0.847,0.862</skyColor>
+			<gravitationalMultiplier>115</gravitationalMultiplier>
+			<orbitalDistance>260</orbitalDistance>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<planet name="Oberon" DIMID="-1509" dimMapping="" customIcon="iceworld">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>70</gravitationalMultiplier>
+				<orbitalDistance>60</orbitalDistance>
+				<orbitalTheta>135</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>36000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+			<planet name="Titania" DIMID="-1510" dimMapping="" customIcon="iceworld">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>70</gravitationalMultiplier>
+				<orbitalDistance>150</orbitalDistance>
+				<orbitalTheta>135</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>80000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+		</planet>
+		<planet name="Neptune" DIMID="117" customIcon="gasgiantblue">
+			<isKnown>true</isKnown>
+			<GasGiant>true</GasGiant>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.141,0.274,0.921</skyColor>
+			<gravitationalMultiplier>150</gravitationalMultiplier>
+			<orbitalDistance>300</orbitalDistance>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<atmosphereDensity>200</atmosphereDensity>
+			<planet name="Triton" DIMID="-1504" dimMapping="" customIcon="iceworld">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>80</gravitationalMultiplier>
+				<orbitalDistance>70</orbitalDistance>
+				<orbitalTheta>225</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>36000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+		</planet>
+		<planet name="Pluto" DIMID="-77" dimMapping="" customIcon="iceworld">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>40</gravitationalMultiplier>
+			<orbitalDistance>310</orbitalDistance>
+			<orbitalTheta>360</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>48000</rotationalPeriod>
+			<atmosphereDensity>10</atmosphereDensity>
+			<generateCraters>true</generateCraters>
+			<planet name="Charon" DIMID="120" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>35</gravitationalMultiplier>
+				<orbitalDistance>50</orbitalDistance>
+				<orbitalTheta>270</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>48000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<generateCraters>true</generateCraters>
+			</planet>
+		</planet>
+		<planet name="Eris" DIMID="-21" dimMapping="" customIcon="iceworld">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>40</gravitationalMultiplier>
+			<orbitalDistance>320</orbitalDistance>
+			<orbitalTheta>360</orbitalTheta>
+			<orbitalPhi>0</orbitalPhi>
+			<rotationalPeriod>48000</rotationalPeriod>
+			<atmosphereDensity>10</atmosphereDensity>
+			<generateCraters>true</generateCraters>
+		</planet>
+	</star>
+</galaxy>
